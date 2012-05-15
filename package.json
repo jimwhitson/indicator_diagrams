@@ -1,0 +1,12 @@
+{
+    "name": "indicator_diagrams",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "gzippo": "0.1.4",
+        "express": "2.5.9",
+        "jade": "0.26.0",
+        "redis": "0.7.2",
+        "connect-redis": "1.3.0"
+    }
+}

@@ -1,0 +1,22 @@
+doctype 5
+head
+  title= title
+  link(rel="stylesheet", href="jquery-ui.css", type="text/css")
+  link(rel="stylesheet", href="blueprint/screen.css", type="text/css")
+  link(rel="stylesheet", href="blueprint/plugins/buttons/screen.css", type="text/css")
+body
+script(src="/fabric.js")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+script(src="/jquery-ui.js")
+input(type="hidden", id="csrf-token", value="#{token}")
+input(type="text", id="new-file-name")
+select(name="file", id="load-control-fn") 
+  option(value="")
+  - if (files)
+    - each f in files
+        option(value="#{f}") #{f}
+div
+  button(id="load")
+    load
+canvas(width=1000, height=600, id="c")
+script(src="/balls.js")
